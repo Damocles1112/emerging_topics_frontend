@@ -1,12 +1,17 @@
 # how to run this project in docker( very simple)
 - download docker desktop, which will attach a docker runtime
+firstly, you need run the backend  
+create docker network
+```
+docker network create emerging_topics_network
+```
 - build image
 ```
 docker build -t emerging_topics_frontend .
 ```
 - run container from image you built
 ```
-docker run -p 9528:9528 emerging_topics_frontend
+docker run --rm --network emerging_topics_network -p 9528:9528 emerging_topics_frontend
 ```
 
 # vue+elementUI 后台管理极简模板

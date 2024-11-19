@@ -134,3 +134,8 @@ module.exports = {
       )
   }
 }
+
+//check if is in docker
+if (process.env.DOCKER) {
+  module.exports.devServer.proxy['/admin'].target = `http://backend:8800/`;
+}
