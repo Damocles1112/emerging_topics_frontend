@@ -1,3 +1,5 @@
+This is the frontend of PolyU COMP5544 teamwork project.  
+The backend github project can be found [here](https://github.com/Damocles1112/emerging_topics_frontend)
 # how to run this project in docker( very simple)
 - download docker desktop, which will attach a docker runtime
 firstly, you need run the backend  
